@@ -6,7 +6,7 @@ Quick example to create a cluster using Java and the Dataproc API.
 
 Set the variables in `src/main/java/com/example/DataprocExample.java` and run:
 
-```java
+```bash
 mvn compile exec:java -Dexec.mainClass=com.example.DataprocExample
 ```
 
