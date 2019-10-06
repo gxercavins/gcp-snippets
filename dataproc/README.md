@@ -6,6 +6,7 @@ This sections contains Cloud Dataproc snippets.
 
 Currently, these are the examples available:
 
+* **Create Cluster (Java)**: basic example to create a simple cluster using Java.
 * **Set Idle Delete TTL (Python)**: how to schedule cluster deletion with the Python Client Library.
 
 ## License
