@@ -29,9 +29,9 @@ class RegionalDataFlowHook(DataFlowHook):
                                dataflow_template):
       ...
       request = service.projects().locations().templates().launch(
-          projectId=PROJECT,
-          location=REGION,
-          gcsPath=TEMPLATE_PATH,
+          projectId=variables['project'],
+          location=variables['region'],
+          gcsPath=dataflow_template,
           body=body
       )
       ...

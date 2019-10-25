@@ -50,9 +50,9 @@ class RegionalDataFlowHook(DataFlowHook):
               "environment": environment}
       service = self.get_conn()
       request = service.projects().locations().templates().launch(
-          projectId=PROJECT,
-          location=REGION,
-          gcsPath=TEMPLATE_PATH,
+          projectId=variables['project'],
+          location=variables['region'],
+          gcsPath=dataflow_template,
           body=body
       )
       response = request.execute()
