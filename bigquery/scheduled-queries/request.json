@@ -1,0 +1,11 @@
+{
+  "dataSourceId": "scheduled_query",
+  "destinationDatasetId": "test",
+  "displayName": "test-api",
+  "params": {
+      "destination_table_name_template": "test_using${run_date}",
+      "query": "SELECT 1",
+      "write_disposition": "WRITE_TRUNCATE"
+  },
+  "schedule": "every day 18:03"
+}

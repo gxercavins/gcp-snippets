@@ -6,6 +6,7 @@ This sections contains BigQuery snippets.
 
 Currently, these are the examples available:
 
+* **Scheduled Queries (cURL/Bash)**: how to use the REST API to list and create scheduled queries
 * **Share a Dataset programmatically (Python)**: share with either the `googleapis` or the idiomatic library
 
 ## License
