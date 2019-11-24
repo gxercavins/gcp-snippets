@@ -1,0 +1,48 @@
+{
+  "displayName": "no-pull-alert",
+  "combiner": "OR",
+  "conditions": [
+    {
+      "conditionAbsent": {
+        "filter": "metric.type=\"pubsub.googleapis.com/subscription/pull_request_count\" resource.type=\"pubsub_subscription\" resource.label.\"project_id\"=\"$PROJECT\" resource.label.\"subscription_id\"=\"$SUBSCRIPTION\"",
+        "duration": "180s",
+        "trigger": {
+          "count": 1
+        },
+        "aggregations": [
+          {
+            "alignmentPeriod": "60s",
+            "perSeriesAligner": "ALIGN_RATE"
+          }
+        ]
+      },
+      "displayName": "Pull requests absent for $PROJECT, $SUBSCRIPTION"
+    },
+    {
+      "conditionThreshold": {
+        "filter": "metric.type=\"pubsub.googleapis.com/subscription/pull_request_count\" resource.type=\"pubsub_subscription\" resource.label.\"project_id\"=\"$PROJECT\" resource.label.\"subscription_id\"=\"$SUBSCRIPTION\"",
+        "comparison": "COMPARISON_LT",
+        "thresholdValue": 1,
+        "duration": "60s",
+        "trigger": {
+          "count": 1
+        },
+        "aggregations": [
+          {
+            "alignmentPeriod": "60s",
+            "perSeriesAligner": "ALIGN_RATE"
+          }
+        ]
+      },
+      "displayName": "Pull requests are 0 for $PROJECT, $SUBSCRIPTION"
+    }
+  ],
+  "documentation": {
+    "content": "**ALERT**\n\nNo pull message operations",
+    "mimeType": "text/markdown"
+  },
+  "notificationChannels": [
+    "projects/$PROJECT/notificationChannels/$CHANNEL"
+  ],
+  "enabled": true
+}
