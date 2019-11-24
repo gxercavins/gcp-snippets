@@ -8,6 +8,7 @@ Currently, these are the examples available:
 
 * **Dataflow Python3**: how to launch jobs written in Python 3 in Airflow <1.10.3
 * **Regional Dataflow Template Operator**: how to set a regional endpoint for the job metadata in Airflow <1.10.3
+* **Start Dataproc Job**: how to send a job to a Dataproc Cluster using the `DataProcSparkOperator`.
 
 ## License
 
