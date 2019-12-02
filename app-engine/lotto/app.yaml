@@ -1,0 +1,9 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+service: lotto
+
+handlers:
+- url: /.*
+  script: main.app
+
