@@ -4,7 +4,7 @@ Modify a basic hello world example to return a number combination that conforms 
 
 ## Example
 
-Note that the example is constructed over the official hello world sample [here](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard/hello_world).
+Note that the example is constructed over the official hello world sample [here](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard/hello_world) using the `webapp2` framework.
 
 We add a new handler for the `/lotto` endpoint:
 
@@ -34,8 +34,8 @@ class LottoPage(webapp2.RequestHandler):
 	    repeat = True
 
 	logging.info(sorted(lucky_combination))
-    self.response.headers['Content-Type'] = 'text/plain'
-    self.response.write(sorted(lucky_combination))
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write(sorted(lucky_combination))
 ```
 
 We generate six random non-repeating numbers between 1 and 49 and return the sorted combination.
