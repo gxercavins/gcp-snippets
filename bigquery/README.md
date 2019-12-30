@@ -12,6 +12,7 @@ Currently, these are the examples available:
 * **Query Statistics (Java)**: use the Java Client Library to get query statistics
 * **Scheduled Queries (cURL/Bash)**: how to use the REST API to list and create scheduled queries
 * **Share a Dataset programmatically (Python)**: share with either the `googleapis` or the idiomatic library
+* **Update Table Expiration (Python)**: use the Python Client Library to update the table expiration date
 
 ## License
 
