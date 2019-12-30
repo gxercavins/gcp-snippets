@@ -8,6 +8,7 @@ Currently, these are the examples available:
 
 * **Analytics User Journey (SQL)**: Google Analytics Export data - SQL script to get users' journey data between two pages
 * **Clustering Playground (Python)**: Quick tests to play around with clustered tables
+* **Dataframe to Partitioned Table (Python)**: use the Python Client Library to load a pandas dataframe into a time-partitioned table
 * **Job Substates (Python)**: use the Python Client Library to get detailed job status information
 * **Query Statistics (Java)**: use the Java Client Library to get query statistics
 * **Scheduled Queries (cURL/Bash)**: how to use the REST API to list and create scheduled queries
