@@ -10,6 +10,7 @@ Currently, these are the examples available:
 * **Clustering Playground (Python)**: Quick tests to play around with clustered tables
 * **Dataframe to Partitioned Table (Python)**: use the Python Client Library to load a pandas dataframe into a time-partitioned table
 * **Job Substates (Python)**: use the Python Client Library to get detailed job status information
+* **On-demand Data Transfer Runs (Python)**: use the Python Client Library to trigger a manual DTS run
 * **Query Statistics (Java)**: use the Java Client Library to get query statistics
 * **Returning Users (SQL)**: calculate the ratio of repeating users with a self join
 * **Scheduled Queries (cURL/Bash)**: how to use the REST API to list and create scheduled queries
