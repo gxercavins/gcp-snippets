@@ -8,6 +8,7 @@ Currently, these are the examples available:
 
 * **Create Cluster (Java)**: basic example to create a simple cluster using Java.
 * **Set Idle Delete TTL (Python)**: how to schedule cluster deletion with the Python Client Library.
+* **Web Interfaces (Python)**: how to retrieve the cluster component endpoints programmatically.
 
 ## License
 
