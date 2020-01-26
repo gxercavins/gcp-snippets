@@ -14,6 +14,7 @@ Currently, these are the examples available:
 * **Query Statistics (Java)**: use the Java Client Library to get query statistics
 * **Returning Users (SQL)**: calculate the ratio of repeating users with a self join
 * **Scheduled Queries (cURL/Bash)**: how to use the REST API to list and create scheduled queries
+* **Script Results (Python)**: how to get query results for all jobs in a BigQuery script
 * **Share a Dataset programmatically (Python)**: share with either the `googleapis` or the idiomatic library
 * **Update Table Expiration (Python)**: use the Python Client Library to update the table expiration date
 
