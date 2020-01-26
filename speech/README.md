@@ -6,7 +6,8 @@ This sections contains Speech-to-Text API examples.
 
 Currently, these are the examples available:
 
-* **MP3 Encoding**: how to specify MP3 as the audio encoding format.
+* **MP3 Encoding** (Python): how to specify MP3 as the audio encoding format.
+* **Progress Percent** (Python): how to track progress for long running transcripts.
 
 ## License
 
