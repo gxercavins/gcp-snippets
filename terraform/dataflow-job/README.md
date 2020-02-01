@@ -14,7 +14,7 @@ Terraform v0.12.20
 
 and the Google-provided [word count][1] Dataflow template as `inputFile`. Content of `main.tf` file is:
 
-```lang-yaml
+```tf
 variable "project_id" {
   type        = string
   description = "GCP Project ID."
@@ -43,7 +43,7 @@ resource "google_dataflow_job" "wordcount" {
 
 The variables are defined in the previous file but set in `df.tfvars` (change with the appropriate values):
 
-```lang-yaml
+```tf
 project_id = "PROJECT_ID"
 gcs_location = "BUCKET_NAME"
 ```
